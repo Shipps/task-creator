@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Node.js Task Creator</title>
+		<script src="./jquery/jquery.min.js"></script>
+	</head>
+<body>
+	<label>Enter Task Id:</label> <input type="text" id="inputTaskId">
+	<button id="exportBalooFiles" type="button">Update Task Data Using Baloo Data</button>
+	
+	<script>
+	$("#exportBalooFiles").click(function(){
+		
+		var taskIdName = $("#inputTaskId").val();
+		
+		$.post("http://localhost:80/exportBalooJSON",{taskIdName: taskIdName}, function(data){
+			console.log("data received : " , data);
+		});
+		
+	});
+	</script>
+</body>
+</html>

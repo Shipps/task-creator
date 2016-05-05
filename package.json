@@ -1,0 +1,9 @@
+{
+  "name": "nlp-task-creator",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.8.1",
+    "express": "^3.*",
+    "fs": "*"
+  }
+}

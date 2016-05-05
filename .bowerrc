@@ -1,0 +1,10 @@
+{
+    "directory": "static",
+    "registry": {
+        "search": [
+          "http://dls-registry.herokuapp.com",
+          "https://bower.herokuapp.com"
+        ]
+    }
+    
+}
